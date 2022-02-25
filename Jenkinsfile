@@ -20,7 +20,7 @@ pipeline {
   stage('Push jar to artifactory') {
    steps {
     rtUpload (
-     serverId: 'Artifactory-server',
+     serverId: 'artifactory-server',
      spec: '''{
        "files": [
           {
